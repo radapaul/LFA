@@ -1,0 +1,82 @@
+Sigma:
+0
+1
+#
+End
+Alphabet:
+0
+1
+#
+x
+_
+End
+States:
+q1 S
+q2
+q3
+q4
+q5
+q6
+q7
+q8
+q_accept F
+End
+Transitions:
+q1->q3: 1->x R
+q1->q2: 0->x R
+q1->q8: #-># R
+q2->q2: 0->0 R 
+q2->q2: 1->1 R
+q2->q4: #-># R 
+q3->q3: 0->0 R 
+q3->q3: 1->1 R 
+q3->q5: #-># R 
+q4->q4: x->x R 
+q4->q6: 0->x L 
+q5->q5: x->x R 
+q5->q6: 1->x L 
+q6->q6: 0->0 L 
+q6->q6: 1->1 L 
+q6->q6: x->x L 
+q6->q7: #-># L 
+q7->q7: 0->0 L 
+q7->q7: 1->1 L 
+q7->q1: x->x R 
+q8->q8: x->x R 
+q8->q_accept: _->_ R 
+End
+Head:
+0
+End
+Tape1:
+0
+1
+1
+0
+0
+0
+#
+0
+1
+1
+0
+0
+0
+_
+End
+Tape2:
+0
+1
+1
+0
+0
+0
+#
+0
+1
+1
+0
+0
+0
+_
+End
